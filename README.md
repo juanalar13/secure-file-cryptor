@@ -13,6 +13,20 @@ It's important to highlight that we included the Singleton pattern, which is a s
 ## Singleton Pattern in the code 
 ![Singleton Pattern Imagen](https://pbs.twimg.com/media/F__K6iVWAAAeUtM?format=jpg&name=small)
 
+# How the program works?
+The `FileEncryptor` class provides methods for encrypting and decrypting files using AES encryption. The class employs a combination of password-based key derivation, symmetric encryption, and file hashing to ensure secure file handling. 
+
+## For encryption
+The class generates a random salt and derives a secret key using the PBKDF2 key derivation algorithm. It then generates a random initialization vector (IV) for AES encryption. The SHA-256 hash of the original file is calculated and stored along with the IV and salt in an output file. The actual file content is encrypted using the AES algorithm in CBC mode with PKCS5Padding
+
+## For decryption
+The class reads the IV, salt, and original hash from the encrypted file. It derives the secret key from the provided password and salt, decrypts the file using the stored IV, and calculates the SHA-256 hash of the decrypted content. The integrity of the file is verified by comparing the original hash with the hash calculated after processing.
+
+## SIgleton pattern specific use in the project
+The class employs a singleton pattern for a single instance across the application. It defines constants for key derivation, algorithm names, buffer size, and encrypted file extension. Cryptographic operations, using AES in CBC mode, are managed by the cipherFile method for both encryption and decryption.
+
+Utility methods are present for generating random salt and IV, calculating SHA-256 hash, and determining the output file path based on input and cryptographic mode. The class robustly handles exceptions related to file operations, encryption/decryption, and file integrity verification.
+
 # Challenges encountered
 In the difficulties we faced, we found ourselves in a situation where we had never done a practice like this before. Initially, we didn't have much skill, and it was necessary to investigate part by part. Also, we had to decide how we were going to store the 'inputs', meaning, without considering the available libraries for encryption and decryption, but rather using a class called 'ObjectInputStream' that allows us to write objects and load them.
 We can say that thanks to very good documentation we found, it allowed us to have an agile development regarding Java's IV
