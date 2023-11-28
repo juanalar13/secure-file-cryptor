@@ -25,13 +25,20 @@ String salt = generateSalt();
             byte[] hashSHA256 = calculateSHA256(filePath);
 ```
 
-[Documentation found](https://www.baeldung.com/java-aes-encryption-decryption).
+[Documentation found that helped us](https://www.baeldung.com/java-aes-encryption-decryption).
             
+# Conclusions
+In conclusion, we have:
+
+- Effective use of the MVC architecture.
+- The importance of including the Singleton pattern, as it ensured that there was only one instance responsible for encryption processes, thereby avoiding potential issues related to multiple instances.
+- The decision to use the "ObjectInputStream" class to store objects, instead of relying exclusively on external libraries, demonstrated flexibility and adaptability in the approach to the solution.
+- For a successful practice, it is crucial to understand and apply cryptographic techniques, such as the use of Diffie-Hellman, AES, RSA, and PBKDF2, as it relates to the effective application of security principles in the program's development.
+- Attention to security considerations, including the incorporation of salt and the use of robust algorithms, reflects a practical and responsible approach to password management and cryptographic processes.
+- The combination of a structured approach, continuous learning, and good documentation enabled successful development and implementation of a robust program that effectively addresses the security requirements set for the project.
 
 
 
 
 
-
-
-e the program
+#### Thanks for read.
