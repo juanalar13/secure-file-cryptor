@@ -18,10 +18,12 @@ In the difficulties we faced, we found ourselves in a situation where we had nev
 We can say that thanks to very good documentation we found, it allowed us to have an agile development regarding Java's IV
 
 
-`String salt = generateSalt();
+```
+String salt = generateSalt();
             SecretKey key = getKeyFromPassword(password, salt);
             IvParameterSpec iv = generateIV();
-            byte[] hashSHA256 = calculateSHA256(filePath);`
+            byte[] hashSHA256 = calculateSHA256(filePath);
+```
             
 
 
