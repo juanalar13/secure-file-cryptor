@@ -22,7 +22,7 @@ The class generates a random salt and derives a secret key using the PBKDF2 key 
 ## For decryption
 The class reads the IV, salt, and original hash from the encrypted file. It derives the secret key from the provided password and salt, decrypts the file using the stored IV, and calculates the SHA-256 hash of the decrypted content. The integrity of the file is verified by comparing the original hash with the hash calculated after processing.
 
-## SIgleton pattern specific use in the project
+## Singleton pattern specific use in the project
 The class employs a singleton pattern for a single instance across the application. It defines constants for key derivation, algorithm names, buffer size, and encrypted file extension. Cryptographic operations, using AES in CBC mode, are managed by the cipherFile method for both encryption and decryption.
 
 Utility methods are present for generating random salt and IV, calculating SHA-256 hash, and determining the output file path based on input and cryptographic mode. The class robustly handles exceptions related to file operations, encryption/decryption, and file integrity verification.
