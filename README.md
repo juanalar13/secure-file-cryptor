@@ -17,12 +17,12 @@ It's important to highlight that we included the Singleton pattern, which is a s
 In the difficulties we faced, we found ourselves in a situation where we had never done a practice like this before. Initially, we didn't have much skill, and it was necessary to investigate part by part. Also, we had to decide how we were going to store the 'inputs', meaning, without considering the available libraries for encryption and decryption, but rather using a class called 'ObjectInputStream' that allows us to write objects and load them.
 We can say that thanks to very good documentation we found, it allowed us to have an agile development regarding Java's IV
 
-"js
-String salt = generateSalt();
+
+`String salt = generateSalt();
             SecretKey key = getKeyFromPassword(password, salt);
             IvParameterSpec iv = generateIV();
-            byte[] hashSHA256 = calculateSHA256(filePath);
-            "
+            byte[] hashSHA256 = calculateSHA256(filePath);`
+            
 
 
 
