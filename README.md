@@ -6,10 +6,10 @@ For the development of the project, we used an MVC architecture, which stands fo
 
 It's important to highlight that we included the Singleton pattern, which is a software design pattern that ensures a class has only one instance. In the context of this specific project, it's crucial as it prevents multiple encryption processes.
 
-![MVS](http://4.bp.blogspot.com/_COcsfdYwI20/SNKvLIYfapI/AAAAAAAADBY/XYAUGCo0YFo/w1200-h630-p-k-no-nu/mvc.png)
+![MVS](https://4.bp.blogspot.com/-LSdEcy5ZlGY/WxMvPqGVw3I/AAAAAAAABwA/UGj7tfEfHvQ1qkKMNYGq-CM0kYH9thNvQCLcBGAs/s1600/mvc.png)
 
 ## Singleton Pattern in the code 
-![Singleton Pattern Imagen](blob:https://web.whatsapp.com/4b225490-ffe0-4a0c-a5e7-917db934c2c9)
+![Singleton Pattern Imagen](https://pbs.twimg.com/media/F__K6iVWAAAeUtM?format=jpg&name=small)
 
 # Challenges encountered
 
