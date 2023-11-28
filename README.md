@@ -24,6 +24,7 @@ String salt = generateSalt();
             IvParameterSpec iv = generateIV();
             byte[] hashSHA256 = calculateSHA256(filePath);
 ```
+
 [Documentation found](https://www.baeldung.com/java-aes-encryption-decryption).
             
 
